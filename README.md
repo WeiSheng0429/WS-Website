@@ -1,2 +1,2 @@
 # WS-Website
-This is my website
+This is a portfolio website that I created in August 2024.
