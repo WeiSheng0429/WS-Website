@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="../css_files/style.css">
+    <title>Portfolio Website</title>
+</head>
+
+<body>
+    <!-- Loading Screen
+    <div id="preloader">
+        <div class="loadingscreen">
+            <img src="../images_files/loading_gif.gif" alt="Loading" class="loading-gif">
+            <h1>Loading...</h1>
+        </div>
+    </div> -->
+
+    <!-- Navigation Bar -->
+    <header>
+        <a href="homepage.html" class="logo">Ws 0.0</a>
+        <div class="nav-toggle" id="nav-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <nav id="nav">
+            <a href="homepage.html">Home</a>
+            <a href="about.html" class="active">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Resume</a>
+            <a href="#">Service</a>
+        </nav>
+    </header>
+    <h1>Animation on Scroll</h1>
+    <div class ="view">
+        <div class="block">
+            <img src="../images_files/WS_Logo.png" alt="Loading" class="loading-gif">
+        </div>
+        <div class="block">
+            <img src="../images_files/loading_gif.gif" alt="Loading" class="loading-gif">
+        </div>
+        <div class="block">
+            <img src="../images_files/loading_gif.gif" alt="Loading" class="loading-gif">
+        </div>
+        <div class="block">
+            <img src="../images_files/loading_gif.gif" alt="Loading" class="loading-gif">
+        </div>
+    </div>
+
+
+
+    <script>
+        // Navigation Toggle Function
+        document.querySelector('.nav-toggle').addEventListener('click', function () {
+            document.querySelector('nav').classList.toggle('nav-open');
+        });
+
+        // Preloader Function
+        var loader = document.getElementById("preloader");
+
+        function showPreloader() {
+            document.body.classList.add('loading');
+            loader.style.display = "flex";
+        }
+
+        function hidePreloader() {
+            loader.style.display = "none";
+            document.body.classList.remove('loading');
+        }
+
+        window.addEventListener("load", function () {
+            showPreloader();
+            setTimeout(hidePreloader, 2000);
+        });
+    </script>
+
+</body>
+
+</html>
