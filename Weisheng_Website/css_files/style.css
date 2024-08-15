@@ -24,6 +24,15 @@ body{
     color: white;
 }
 
+body h2{
+    color: #A3C9FF;
+}
+
+
+a{
+    text-decoration: none;
+}
+
 
 /*Start of Loading Screen*/
 #preloader {
@@ -388,19 +397,7 @@ span{
 
 
 /*Start of AboutPage Content*/
-@keyframes appear {
-    from{
-        opacity: 0;
-        transform: translateX(-100px);
-    }
-    to{
-        opacity: 1;
-        transform: translateX(0px);
-    }
+.progress{
+    height: 15px;    
 }
 
-.block{
-    animation: appear -5s linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 40%;
-}
