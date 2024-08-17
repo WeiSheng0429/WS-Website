@@ -20,3 +20,25 @@ window.addEventListener("load", function() {
     showPreloader();
     setTimeout(hidePreloader, 2000); 
 });
+
+
+
+/*Contact Form*/
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault(); 
+
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const services = document.getElementById('services').value;
+    const projectDetails = document.getElementById('project-details').value;
+
+    console.log('Form submitted:', {
+        name,
+        email,
+        services,
+        projectDetails
+    });
+
+    alert('Thank you for submitting the form, ' + name + '!');
+});
+
