@@ -693,3 +693,107 @@ section {
     }
 
 }
+/*End of Contact Page*/
+
+
+
+/*Start of Services*/
+.container .display-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 9%;
+}
+
+.service-title{
+    color: white;
+    text-align: center;
+    font-size: 6vw;
+    letter-spacing: -0.025em;
+}
+
+.word-slider {
+    position: relative;
+    width: 100%;
+    height: 140px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.service-words {
+    display: inline-block;
+    animation: slideWords 20s linear infinite; 
+}
+
+.service-words span {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 85px;
+    line-height: 140px;
+    white-space: nowrap;
+    display: inline-block;
+    padding-right: 40px; 
+    -webkit-text-stroke: 1px #A3C9FF;
+    color: transparent;
+}
+
+@keyframes slideWords {
+    0% {
+        transform: translateX(0%); 
+    }
+    100% {
+        transform: translateX(-100%); 
+    }
+}
+
+.subtitle-service{
+    color: white;
+    text-align: start;
+    
+}
+
+.subtitle-service h2{
+    font-size: 1.5vw;
+    letter-spacing: -0.025em;
+}
+
+.subtitle-service p{
+    font-size: 1vw;
+    letter-spacing: -0.025em;
+    text-align: justify;
+}
+
+
+.service-content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row; 
+}    
+
+.service-content p {
+    flex: 1;
+    margin-left: 20px; 
+}
+
+.service-img img {
+    width: auto;
+    height: 300px; 
+    display: block;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .service-content {
+        flex-direction: column; /* On small screens, stack the items vertically */
+        align-items: center;
+    }
+
+    .service-content p {
+        margin: 0 0 20px 0; /* Add margin below the paragraph */
+    }
+
+    .service-img img {
+        width: 100%; /* Make the image full-width */
+        height: auto;
+    }
+}
+
