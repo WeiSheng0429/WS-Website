@@ -768,6 +768,7 @@ section {
 /*End of Service Page*/
 
 /*Start of Work Page*/
+/* Start of Work Page */
 .work-section {
     padding: 5rem 0;
     background-color: #000;
@@ -815,13 +816,6 @@ section {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
-.work-link i {
-    font-size: 2rem;
-    color: #A3C9FF;
-    margin-top: 1rem;
-    display: inline-block;
-}
-
 .details-section {
     padding: 4rem 0;
     background-color: #000;
@@ -842,18 +836,69 @@ section {
 }
 
 .details-text {
-    width: 50%;
-    font-size: 1.6rem;
-    color: #ddd;
+    color: white;
 }
 
-.details-title {
+.details-text p{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.details-text h3{
     font-size: 3rem;
+    color: #A3C9FF;
+}
+
+.details-text i {
+    font-size: 4rem; 
+    transition: transform 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+.details-text i:hover {
+    transform: scale(1.5); 
+    color: #A3C9FF; 
+}
+
+
+.details-text i.active {
+    transform: scale(1.5); 
+    color: #FFA500; 
+}
+
+
+.details-title {
+    font-size: 4rem;
     color: #A3C9FF;
     margin-bottom: 1rem;
 }
 
+.language-icons {
+    font-size: 5rem;
+    color: white;
+    gap:3rem;
+}
+
+
 @media (max-width: 768px) {
+    .work-container {
+        grid-template-columns: 1fr; 
+        gap: 2rem; 
+    }
+
+    .work-card {
+        padding: 1rem;
+        margin: 0 auto; 
+    }
+
+    .work-title {
+        font-size: 2.5rem; 
+    }
+
+    .work-item-title {
+        font-size: 2rem; 
+    }
+
     .details-container {
         flex-direction: column;
         align-items: center;
@@ -869,5 +914,5 @@ section {
         margin-bottom: 2rem;
     }
 }
+/* End of Work Page */
 
-/*End of Work Page*/
