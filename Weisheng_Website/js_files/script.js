@@ -1,31 +1,24 @@
-//All Javascript Functions for Weisheng's Website
-// Navigation Toggle Function
-document.querySelector('.nav-toggle').addEventListener('click', function() {
-    document.querySelector('nav').classList.toggle('nav-open');
-});
-
 // Preloader Function
 var loader = document.getElementById("preloader");
+
 function showPreloader() {
-    document.body.classList.add('loading'); 
-    loader.style.display = "flex"; 
+    document.body.classList.add('loading');
+    loader.style.display = "flex";
 }
 
 function hidePreloader() {
     loader.style.display = "none";
-    document.body.classList.remove('loading'); 
+    document.body.classList.remove('loading');
 }
 
 window.addEventListener("load", function() {
     showPreloader();
-    setTimeout(hidePreloader, 2000); 
+    setTimeout(hidePreloader, 2000);
 });
 
-
-
-/*Contact Form*/
+/* Contact Form */
 document.getElementById('contactForm').addEventListener('submit', function(event) {
-    event.preventDefault(); 
+    event.preventDefault();
 
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
@@ -40,4 +33,5 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     });
 
     alert('Thank you for submitting the form, ' + name + '!');
+    window.location.href = "../html_files/homepage.html";
 });
