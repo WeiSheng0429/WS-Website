@@ -97,15 +97,13 @@ header {
     z-index: 100;
 }
 
-.logo {
-    font-size: 3rem;
-    color: #A3C9FF;
-    font-weight: 800;
-    cursor: pointer;
+.logo img {
+    width: 150px; 
+    height: auto; 
     transition: 0.5s ease;
 }
 
-.logo:hover {
+.logo img:hover {
     transform: scale(1.1);
 }
 
@@ -145,8 +143,7 @@ nav a.active {
 
 .home .home-content h1 {
     font-size: 6rem;
-    font-weight: 700;
-    line-height: 1.3;
+    font-weight: 800;
 }
 
 .home-content span {
@@ -160,7 +157,7 @@ nav a.active {
 }
 
 .home-content p {
-    font-size: 1.6rem;
+    font-size: 2rem;
 }
 
 .home-img {
