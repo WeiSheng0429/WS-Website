@@ -42,5 +42,5 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     });
 
     alert('Thank you for submitting the form, ' + name + '!');
-    window.location.href = "../html_files/homepage.html";
+    window.location.href = "../html_files/index.html";
 });
