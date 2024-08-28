@@ -1,3 +1,12 @@
+//Navigation Bar
+document.getElementById('nav-toggle').addEventListener('click', function() {
+    const navMenu = document.getElementById('nav-menu');
+    if (navMenu) {
+        navMenu.classList.toggle('nav-open');
+    }
+});
+
+
 // Preloader Function
 var loader = document.getElementById("preloader");
 
@@ -16,7 +25,7 @@ window.addEventListener("load", function() {
     setTimeout(hidePreloader, 2000);
 });
 
-/* Contact Form */
+// Contact Form 
 document.getElementById('contactForm').addEventListener('submit', function(event) {
     event.preventDefault();
 
