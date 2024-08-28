@@ -1101,3 +1101,19 @@ section {
 }
 
 /* End of Work Page */
+
+/*Report.html*/
+.bio,.intro-report,.inspiration {
+    font-size: 20px;
+    color: black;
+}
+
+.inspiration a{
+    color:blue;
+    font-weight: bolder;
+}
+
+.inspiration img{
+    width: 50%;
+    height: 50%;
+}
