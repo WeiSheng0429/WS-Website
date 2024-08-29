@@ -146,8 +146,8 @@ nav a.active {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #000000; 
-    color: #fff; 
+    background-color: #000000;
+    color: #fff;
     flex-wrap: wrap;
 }
 
@@ -183,7 +183,7 @@ nav a.active {
 }
 
 .footer-container .footer-navigation ul li a:hover {
-    color: #A3C9FF; 
+    color: #A3C9FF;
 }
 
 .footer-container .footer-social-media {
@@ -191,13 +191,13 @@ nav a.active {
 }
 
 .footer-container .socialmedia-icons a {
-    color: #fff; 
+    color: #fff;
     font-size: 1.5em;
     margin: 0 10px;
 }
 
 .footer-container .socialmedia-icons a:hover {
-    color: #A3C9FF; 
+    color: #A3C9FF;
 }
 
 .copyright {
@@ -477,7 +477,7 @@ nav a.active {
         margin-top: 4rem;
     }
 
-    a.btn{
+    a.btn {
         font-size: 2.5rem;
     }
 }
@@ -1103,17 +1103,26 @@ section {
 /* End of Work Page */
 
 /*Report.html*/
-.bio,.intro-report,.inspiration {
+.bio,
+.intro-report,
+.inspiration,
+.accessibility,
+.usability,
+.learning,
+.evaluation1,
+.evaluation2,
+.resources,
+.appendices {
     font-size: 20px;
     color: black;
 }
 
-.inspiration a{
-    color:blue;
+.inspiration a {
+    color: blue;
     font-weight: bolder;
 }
 
-.inspiration img{
+.inspiration img {
     width: 50%;
     height: 50%;
 }
