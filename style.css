@@ -1,4 +1,4 @@
-/*Font for About Page*/
+/*Font Style*/
 @import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap');
 
 /*Global Style*/
@@ -35,7 +35,7 @@ a {
 
 /*Start of Loading Screen*/
 #preloader {
-    background: black url(../images_files/loading_gif.gif) no-repeat center center;
+    background: black url(images_files/loading_gif.gif) no-repeat center center;
     background-size: 20%;
     height: 100vh;
     width: 100%;
