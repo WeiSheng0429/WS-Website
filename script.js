@@ -1,4 +1,4 @@
-//Navigation Bar
+// Mobile Navigation Bar
 document.getElementById('nav-toggle').addEventListener('click', function() {
     const navMenu = document.getElementById('nav-menu');
     if (navMenu) {
@@ -7,7 +7,7 @@ document.getElementById('nav-toggle').addEventListener('click', function() {
 });
 
 
-// Preloader Function
+// Preloader
 var loader = document.getElementById("preloader");
 
 function showPreloader() {
@@ -22,7 +22,7 @@ function hidePreloader() {
 
 window.addEventListener("load", function() {
     showPreloader();
-    setTimeout(hidePreloader, 2000);
+    setTimeout(hidePreloader, 1000);
 });
 
 // Contact Form 
